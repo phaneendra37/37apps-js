@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+  z-index: 1;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: "Heebo", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  position: relative;
+  bottom: 0;
+  background-color: #f3f3f3 !important;
+}
+body::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed !important;
+  background-size: cover;
+  position: fixed;
+}
+.header {
+  text-align: center;
+  font-size: 34px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .header {
+    font-size: 30px;
+  }
+}
+
+#card .card-body {
+  color: #000 !important;
+  padding: 30px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+input:focus,
+button:focus {
+  box-shadow: none !important;
+  outline: unset !important;
+}
+.number-box {
+  height: 200px;
+  width: 200px;
+  background-color: #9fc6ff;
+  margin: 26px auto;
+  border-radius: 15px;
+  filter: blur(26px);
+}
+
+.question > span {
+  position: absolute;
+  top: 26%;
+  left: 46%;
+  z-index: 4;
+  font-size: 90px;
+}
+.game-success {
+  background-color: #d0ffcc !important;
+}
+.game-success,
+.game-over {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffc2c8;
+  z-index: 999999;
+}
+
+.phani-modals {
+  position: fixed;
+  /* top: 0; */
+  display: none;
+  left: 0;
+  right: 0;
+  /* bottom: 0; */
+  margin: auto;
+}
+.phani-modals .phani-content {
+  background-color: #fff;
+  border-radius: 6px;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+  z-index: 999999;
+  position: relative;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000ad;
+}
